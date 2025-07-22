@@ -31,6 +31,8 @@
       width: 100vw;
       height: 100%;
       display: none;
+      justify-content: center;
+      align-items: center;
     }
 
     .page img {
@@ -38,11 +40,10 @@
       max-height: 100%;
       object-fit: contain;
       display: block;
-      margin: auto;
     }
 
     .page.active {
-      display: block;
+      display: flex;
     }
 
     .nav-btn {
@@ -64,15 +65,15 @@
 </head>
 <body>
   <div id="flipbook-container">
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" active" id="page1"><img src="mobile_page_1.png" alt="Page 1"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page2"><img src="mobile_page_2.png" alt="Page 2"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page3"><img src="mobile_page_3.png" alt="Page 3"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page4"><img src="mobile_page_4.png" alt="Page 4"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page5"><img src="mobile_page_5.png" alt="Page 5"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page6"><img src="mobile_page_6.png" alt="Page 6"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page7"><img src="mobile_page_7.png" alt="Page 7"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page8"><img src="mobile_page_8.png" alt="Page 8"></div>
-    <div class="page" style="display: flex; align-items: center; justify-content: center;" " id="page9"><img src="mobile_page_9.png" alt="Page 9"></div>
+    <div class="page active" id="page1"><img src="mobile_page_1.png" alt="Page 1"></div>
+    <div class="page " id="page2"><img src="mobile_page_2.png" alt="Page 2"></div>
+    <div class="page " id="page3"><img src="mobile_page_3.png" alt="Page 3"></div>
+    <div class="page " id="page4"><img src="mobile_page_4.png" alt="Page 4"></div>
+    <div class="page " id="page5"><img src="mobile_page_5.png" alt="Page 5"></div>
+    <div class="page " id="page6"><img src="mobile_page_6.png" alt="Page 6"></div>
+    <div class="page " id="page7"><img src="mobile_page_7.png" alt="Page 7"></div>
+    <div class="page " id="page8"><img src="mobile_page_8.png" alt="Page 8"></div>
+    <div class="page " id="page9"><img src="mobile_page_9.png" alt="Page 9"></div>
 
     <button class="nav-btn" id="prevBtn">&#8592;</button>
     <button class="nav-btn" id="nextBtn">&#8594;</button>
